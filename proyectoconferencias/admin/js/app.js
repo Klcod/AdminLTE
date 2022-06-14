@@ -42,16 +42,19 @@ $('#crear_registro_admin').attr('disabled', true);
     }
 });
 
-})
 
  //Date picker
  $('#fecha').datepicker({
   autoclose: true
 });
 
-
-$('.select2').select2();
+$('.seleccionar').select2();//$('.select2').select2();
 
 $('.timepicker').timepicker({
   showInputs: false
 });
+
+$('#icono').iconpicker();
+
+
+})

@@ -36,8 +36,9 @@ $(document).ready(function () {
 
         var id = $(this).attr('data-id');
         var tipo = $(this).attr('data-tipo');
+
         swal({
-            title: 'Estas seguro?',
+            title: '¿Estas seguro?',
             text: "Un registro eliminado no se puede recuperar",
             type: 'warning',
             showCancelButton: true,
@@ -55,11 +56,12 @@ $(document).ready(function () {
                 },
                 url: 'modelo-' + tipo + '.php',
                 success: function (data) {
+                    console.log(data);
                     var resultado = JSON.parse(data);
                     if (resultado.respuesta == 'exito') {
                         swal(
-                            'Eliminado',
-                            'Registro Eliminado',
+                            'Eliminado!',
+                            'Registro Eliminado.',
                             'success'
                         )
                         jQuery('[data-id="'+ resultado.id_eliminado + '"]').parents('tr').remove();

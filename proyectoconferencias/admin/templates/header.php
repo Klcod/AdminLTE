@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
   <link rel="stylesheet" href="css/select2.min.css">
   <link rel="stylesheet" href="css/bootstrap-timepicker.min.css">
+  <link rel="stylesheet" href="css/fontawesome-iconpicker.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="css/AdminLTE.min.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
