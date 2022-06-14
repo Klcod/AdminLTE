@@ -6,6 +6,7 @@
     <div class="user-panel">
 
       <div class="info">
+
         <p><?php echo $_SESSION['nombre']; ?></p>
         <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
       </div>
@@ -39,6 +40,9 @@
         <a href="#">
           <i class="fa fa-calendar"></i>
           <span>Eventos</span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+          </span>
         </a>
         <ul class="treeview-menu">
           <li><a href="lista-evento.php"><i class="fa fa-list-ul" aria-hidden="true"></i> Ver Todos</a></li>
@@ -50,6 +54,9 @@
         <a href="#">
           <i class="fa fa-book" aria-hidden="true"></i>
           <span>Categoria Eventos</span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+          </span>          
         </a>
         <ul class="treeview-menu">
           <li><a href="lista-categorias.php"><i class="fa fa-list-ul" aria-hidden="true"></i> Ver Todos</a></li>
@@ -61,10 +68,13 @@
         <a href="#">
           <i class="fa fa-user-circle" aria-hidden="true"></i>
           <span>Invitados</span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+          </span>
         </a>
         <ul class="treeview-menu">
-          <li><a href="#"><i class="fa fa-list-ul" aria-hidden="true"></i> Ver Todos</a></li>
-          <li><a href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i> Agregar</a></li>
+          <li><a href="lista-invitados.php"><i class="fa fa-list-ul" aria-hidden="true"></i> Ver Todos</a></li>
+          <li><a href="crear-invitado.php"><i class="fa fa-plus-circle" aria-hidden="true"></i> Agregar</a></li>
         </ul>
       </li>
 
